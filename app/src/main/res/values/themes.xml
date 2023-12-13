@@ -10,13 +10,18 @@
         <item name="colorSecondaryVariant">@color/orange_700</item>
         <item name="colorOnSecondary">@color/white</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
         <!-- Customize your theme here. -->
     </style>
 
     <style name="Theme.HabitApp.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyThemeOverlay_Toolbar" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <!-- color used by navigation icon and overflow icon -->
+        <item name="colorOnPrimary">?attr/colorPrimary</item>
     </style>
 
     <style name="Theme.HabitApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />

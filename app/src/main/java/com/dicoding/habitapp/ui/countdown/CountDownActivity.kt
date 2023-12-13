@@ -42,13 +42,13 @@ class CountDownActivity : AppCompatActivity() {
 
 
         //TODO 13 : Start and cancel One Time Request WorkManager to notify when time is up.
-        val channel = getString(R.string.notify_channel_name)
+        val channelName = getString(R.string.notify_channel_name)
         val workManager = WorkManager.getInstance(this)
 
         val dataBuilder = Data.Builder()
             .putInt(HABIT_ID, habit.id)
             .putString(HABIT_TITLE, habit.title)
-            .putString(NOTIFICATION_CHANNEL_ID, channel)
+            .putString(NOTIFICATION_CHANNEL_ID, channelName)
             .build()
 
         oneTimeWorkRequest = OneTimeWorkRequest.Builder(NotificationWorker::class.java)

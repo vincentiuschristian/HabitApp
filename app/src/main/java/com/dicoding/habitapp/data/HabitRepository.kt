@@ -41,7 +41,6 @@ class HabitRepository(private val habitDao: HabitDao, private val executor: Exec
             .setInitialLoadSizeHint(PAGE_SIZE)
             .setEnablePlaceholders(PLACEHOLDERS)
             .build()
-
         return LivePagedListBuilder(habitDao.getHabits(SortUtils.getSorteredQuery(filter)), config).build()
     }
 

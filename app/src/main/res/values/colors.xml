@@ -10,4 +10,5 @@
     <color name="red">#ff1744</color>
     <color name="yellow">#ffc400</color>
     <color name="green">#00e676</color>
+    <color name="toolbarColor">#9c27b0</color>
 </resources>
